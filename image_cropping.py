@@ -1,5 +1,5 @@
 # This script crops all images in 'images' folder according to the bounding boxes specified in
-# 'labels', which should be written in YOLOv8 format.
+# 'labels', which should be written in YOLOv8 format. Cropped images are saved in 'cropped_images' folder.
 # The script should be saved in the same directory as 'images' and 'labels' folders.
 # Finally, information on running time and performance is included in 'cropping_info.txt'.
 
