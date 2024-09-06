@@ -1,5 +1,5 @@
 # This script crops all images in 'images' folder according to the bounding boxes specified in
-# 'labels', which should be written in YOLOv8 format. Cropped images are saved in 'cropped_images' folder.
+# 'labels', which should be written in YOLOv8 format.
 # The script should be saved in the same directory as 'images' and 'labels' folders.
 # Finally, information on running time and performance is included in 'cropping_info.txt'.
 
@@ -68,4 +68,5 @@ l = len(images)
 
 with open('cropping_info.txt', 'w') as f:
     f.write(f"Successfully cropped images: {l - errors}/{l}.\n")
-    f.write(f"Total running time: {round(t / 60,2)} min. Average time per cropped image: {round(t / (l - errors), 4)} s.")
+    if (l - errors) > 0:
+        f.write(f"Total running time: {round(t / 60, 2)} min. Average time per cropped image: {round(t / (l - errors), 4)} s.")
