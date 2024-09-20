@@ -1,0 +1,6 @@
+train: ./images/train  # Path to your training images
+val: ./images/val      # Path to your validation images
+test: ./images/test    # Path to your test images
+
+nc: 1  # Number of classes (you only have one class)
+names: ['0']  # Class names
